@@ -1,0 +1,110 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Estilos para el encabezado */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin-bottom: 1em;
+}
+
+/* Estilo para cada patología */
+.patologia {
+  border: 2px solid #100f0f;
+  /* Cambia el borde a 2px */
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  /* Añade flex para centrar la imagen */
+  flex-direction: column;
+  /* Asegura que los elementos se apilen verticalmente */
+  align-items: center;
+  /* Centra los elementos horizontalmente */
+  width: 80%;
+  /* Ajusta el ancho del div */
+  margin-left: auto;
+  /* Centra el div horizontalmente */
+  margin-right: auto;
+  /* Centra el div horizontalmente */
+}
+
+.patologia h2 {
+  color: #f00;
+}
+
+.patologia img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: lightgray;
+  width: 90%;
+  height: auto;
+  margin: 1em 0;
+
+  .italic {
+    font-style: italic;
+  }
+}
+
+nav a {
+  display: inline-block;
+  margin: 0.5em;
+  padding: 0.5em;
+  background-color: gray;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  flex: 1 1 auto;
+}
+
+section {
+  width: 80%;
+  /* Ancho del 80% */
+  margin: 0 auto;
+  /* Centrado horizontalmente */
+}
+
+section ul li {
+  margin-bottom: 1em;
+  /* Ajusta este valor según el espacio que desees */
+}
+
+
+
+/* Estilos para el pie de página */
+footer {
+  width: 80%;
+  background-color: gray;
+  color: black;
+  border: 2px solid black;
+  padding: 1em;
+  margin: 2em;
+  border-radius: 20px;
+}
+
+/* Media queries para diferentes tamaños de pantalla */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 0.8em;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+}
